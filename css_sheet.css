@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* end of fonts import */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    color: #222222;
+    background-color: #E7EBC5;
+}
+/*referenced "main" from https://www.freecodecamp.org/learn/responsive-web-design/#applied-accessibility*/
+main {
+    padding: 10px 20px 10px 20px;
+    justify-content: center
+}
+/*"justify-content" from https://www.w3schools.com/cssref/css3_pr_justify-content.php */
+div {
+    padding: 10px 20px 10px 20px;
+    justify-content: center;
+}
+h1 {
+    font-family:
+        "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+}
+/*learned "text-decoration-thickness" from https://www.w3schools.com/cssref/pr_text_text-decoration-thickness.php and I also confirmed with the tech tutor the code is valid*/
+/*"text-align" came from https://www.w3schools.com/cssref/pr_text_text-align.php*/
+.pagetitle {
+    text-align: left;
+    padding-bottom: 10px;
+}
+h2 {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+p {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #444444;
+}
+ul {
+    font-family: Roboto, sans-serif;
+    position: relative;
+    left: 40px;
+}
+ol {
+    font-family: Roboto, sans-serif;
+    position: relative;
+    left: 40px;
+}
+img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+/*learned "object-fit" from https://www.w3schools.com/css/css3_object-fit.asp*/
+.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pagemaxwidth {
+    max-width: 80%;
+}
+
+.pagedesc {
+    font-size: 18px;
+    font-weight: 400;
+}
+.pagedesc a:hover{
+    color: #EF8354;
+}
+
+/* -----header & navbar----- */
+/*referenced "header" from https://www.freecodecamp.org/learn/responsive-web-design/#applied-accessibility*/
+header {
+    background-color: #B084CC;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+header h1 {
+    font-size: 48px;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}
+header div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header img {
+    max-width: 150px;
+}
+/*referenced "nav" from https://www.freecodecamp.org/learn/responsive-web-design/#applied-accessibility*/
+nav {
+    background-color: #F8F4E3;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline;
+    color: #222222;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #EF8354;
+}
+.subheader{
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*----- footer -----*/
+/*referenced "footer" from https://www.freecodecamp.org/learn/responsive-web-design/#applied-accessibility*/
+footer {
+    padding: 20px 20px 40px 20px;
+    position: relative;
+    bottom: 0;
+}
+footer p {
+    text-align: center;
+    font-family:
+        "Playfair Display", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*----- homepage -----*/
+#homepageintro {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#playerprofile {
+    max-width: 90%;
+}
+.profilegrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/*grid organization tips from https://css-tricks.com/snippets/css/complete-guide-grid/ which was a recommended link in the course textbook*/
+.profilebox {
+    background-color: #F8F4E3;
+    border: dashed;
+    border-radius: 30px;
+    border-color: #EF8354;
+    text-align: center;
+    max-width: 100%;
+    margin: 10px;
+}
+.profilebox p {
+    font-size: 20px;
+}
+
+/*-----quick reviews-----*/
+.review-block {
+    display: flex;
+    background-color: #F8F4E3;
+    max-width: 100%;
+    margin: 10px;
+}
+.review-block img {
+    width:30%;
+    height: 300px;
+    margin:5px
+}
+.review-desc{
+    margin:5px;
+    max-width:60%;
+    height:auto;
+}
+.review-desc a{
+    color: #222222;
+}
+.review-desc a:hover{
+    color: #EF8354;
+}
+
+/* -----table ===----- */
+table {
+    font-family: monospace;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+td {
+    padding-right: 20px;
+    font-size: 14px;
+    color: #444444;
+}
+th {
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.overallscore {
+    font-weight: 900;
+    font-size: 16px;
+    color: #222222;
+}
+
+/*----- my lists -----*/
+#mylistpage h2 {
+    background-color: #EF8354;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.tier1 li {
+    font-weight: 800;
+}
+
+.tier2 li {
+    font-weight: 500;
+}
+.tier3 li {
+    font-weight: 400;
+}
+
+/*-----about me-----*/
+#aboutme-pageheight {
+    max-width: 80%;
+    height: 90vh;
+}
+/*tech tutor suggested I use "vh" to help with pushing my footer to the bottom*/
+/*used this grid layout from https://gridbyexample.com/examples/example5/ as a reference, this is another recommended resource provided by the course textbook */
+#aboutmeblock {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+#aboutmeblock h2 {
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: auto;
+}
+#aboutmeblock div {
+    grid-column: 1/3;
+}
+#aboutmeblock img {
+    width: 100%;
+    border-radius: 50%;
+    border-style: double;
+    border-width: 10px;
+    grid-column: 3;
+    grid-row: 1/3;
+    margin:auto;
+    object-fit: contain;
+}
+#aboutmeblock p{
+    padding: 1%;
+}
+#portfoliolink{
+    font-weight: bold;
+}
+#portfoliolink:hover{
+    color: #EF8354;
+}
